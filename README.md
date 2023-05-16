@@ -1,6 +1,6 @@
-# DAFN23_Robotics_1
+# DAFN23_Robotics_2
 
-DAFN 2023 - Robotics 1: Roboticist 101 - Software and middleware for robotics
+DAFN 2023 - Robotics 2: ROS 2 - Workflow and basic communication
 
 LaTeX source code and build files.
 
