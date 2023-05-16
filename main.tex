@@ -1,13 +1,13 @@
-% DAFN23 - Robotics - Lecture 1
+% DAFN23 - Robotics - Lecture 2
 % Roberto Masocco <roberto.masocco@uniroma2.it>
-% May 14, 2023
+% May 16, 2023
 
 \documentclass[aspectratio=169]{beamer}
 
 % Slides layout
 \usepackage[
-    title={Roboticist 101},
-    subtitle={Software and middleware for robotics},
+    title={ROS 2},
+    subtitle={Workflow and basic communication},
     event={DAFN},
     author={Roberto Masocco},
     longauthor={Roberto Masocco},
@@ -57,6 +57,9 @@
 % --- Title page ---
 \frame{\titlepage}
 
+% --- Recap ---
+\input{sections/recap}
+
 % --- Table of contents ---
 \begin{frame}
 \frametitle{Roadmap}
@@ -64,15 +67,12 @@
 \end{frame}
 
 % --- Section 1 ---
-\input{sections/intro}
+\input{sections/workflow}
 
 % --- Section 2 ---
-\input{sections/middleware}
+\input{sections/bootstrap}
 
 % --- Section 3 ---
-\input{sections/ros2}
-
-% --- Section 4 ---
-%\input{sections/docker}
+\input{sections/topics}
 
 \end{document}
