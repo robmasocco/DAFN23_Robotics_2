@@ -53,9 +53,12 @@ private:
 	\end{columns}
 	Pay attention to \href{https://www.geeksforgeeks.org/inheritance-in-c/}{\color{blue}\underline{inheritance}} rules.
 \end{frame}
+\begin{frame}{C++ fundamentals}{Namespaces}
+  \textbg{Subdivision} of the global namespace to avoid naming collisions between multiple libraries, resolved with the \textbg{\texttt{::} operator}.
+  \newline\newline
+  Names may become very long, so usually they are hidden with \texttt{typedef}.
+\end{frame}
 \begin{frame}[fragile]{C++ fundamentals}{Namespaces}
-	\textbg{Subdivision} of the global namespace to avoid naming collisions between multiple libraries, resolved with the \textbg{\texttt{::} operator}.
-  %\vspace{.5cm}
 	\begin{columns}
 		\column{.9\textwidth}
 		% Listings: C++ namespaces usage example
@@ -63,16 +66,16 @@ private:
 namespace MyLib {
   void foo() { /* Does something */ }
 } // This is typically done for libraries
+
 class MyClass
 {
 public:
   void foo() { /* Does something as well */ }
 } my_obj; // Watch out for the ';'!
-MyLib::foo();
-my_obj.foo(); // This is calling MyClass::foo!\end{lstlisting}
+
+MyLib::foo(); // This is calling foo from MyLib!
+my_obj.foo(); // This is calling foo from MyClass!\end{lstlisting}
 	\end{columns}
-  %\vspace{.5cm}
-	Names may become very long, so usually they are hidden with \texttt{typedef}.
 \end{frame}
 \begin{frame}[fragile]{C++ fundamentals}{Templates}
 	Classes or functions whose \textbg{implementation depends on some data type}.\\
