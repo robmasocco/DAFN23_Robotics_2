@@ -55,16 +55,23 @@ private:
 \end{frame}
 \begin{frame}[fragile]{C++ fundamentals}{Namespaces}
 	\textbg{Subdivision} of the global namespace to avoid naming collisions between multiple libraries, resolved with the \textbg{\texttt{::} operator}.
-  \vspace{.5cm}
+  %\vspace{.5cm}
 	\begin{columns}
 		\column{.9\textwidth}
 		% Listings: C++ namespaces usage example
 		\begin{lstlisting}[language=C++, caption=Example of namespaces usage.]
+namespace MyLib {
+  void foo() { /* Does something */ }
+} // This is typically done for libraries
+class MyClass
+{
+public:
+  void foo() { /* Does something as well */ }
+} my_obj; // Watch out for the ';'!
 MyLib::foo();
-MyClass::foo();
-// Completely different names for the compiler!\end{lstlisting}
+my_obj.foo(); // This is calling MyClass::foo!\end{lstlisting}
 	\end{columns}
-  \vspace{.5cm}
+  %\vspace{.5cm}
 	Names may become very long, so usually they are hidden with \texttt{typedef}.
 \end{frame}
 \begin{frame}[fragile]{C++ fundamentals}{Templates}

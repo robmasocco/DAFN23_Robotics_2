@@ -24,7 +24,7 @@
   \newline\newline
   \texttt{source /opt/ros/humble/setup.bash} (there are also a \texttt{.zsh} and a \texttt{.sh})
   \newline\newline
-  so that your shell, and all its child processes from then on, will know the \textbg{paths} of all the executables and shared objects (libraries) installed by ROS 2.
+  so that your shell, and all its child processes from then on, will know the \textbg{paths} of all the \textbg{executables}, \textbg{shared objects} (libraries), and \textbg{include directories} installed by ROS 2.
   \newline\newline
   Additional commands are required to set up \textbg{command line completion} and \textbg{environment variables}.\\
   We have a script for this too: \href{https://github.com/IntelligentSystemsLabUTV/ros2-examples/blob/humble/config/ros2_cmds.sh}{\color{blue}\underline{\texttt{config/ros2\_cmds.sh}}}.\\
@@ -70,7 +70,7 @@
 \begin{frame}{Language support}{CMake}
   \begin{columns}
     \column{.5\textwidth}
-    CMake is a \textbg{cross-platform} build configuration generator, which allows to build software using a \textbg{single, unified syntax} on all supported platforms.\\
+    CMake is a \textbg{cross-platform} build configuration generator, which allows to build software using a \textbg{single}, \textbg{unified syntax} on all supported platforms.\\
     Remember \textbg{Makefiles}? CMake is a compiler-agnostic \textbg{Makefile generator}.
     \newline\newline
     We will write \textbg{\texttt{CMakeLists.txt}} files, which are essentially \textbg{scripts} that tell CMake how to build our software.
